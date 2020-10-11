@@ -1,16 +1,16 @@
 var coinFlip = Math.floor(Math.random() * 10);
-var choice = window.prompt("Enter Heads or Tails");
+var choice = window.prompt("Enter heads or tails");
 if (coinFlip < 5) {
-    coinFlip = "Heads";
+    coinFlip = "heads";
 } else {
-    coinFlip = "Tails";
+    coinFlip = "tails";
 }
 
-if (coinFlip == "Heads" && choice == "Heads") {
+if (coinFlip == "heads" && choice == "heads") {
     window.alert("The flip was heads and you chose heads...you win!");
-} else if (coinFlip == "Heads" && choice == "Tails") {
+} else if (coinFlip == "heads" && choice == "tails") {
     window.alert("The flip was heads but you chose tails...you lose!");
-} else if (coinFlip == "Tails" && choice == "Heads") {
+} else if (coinFlip == "tails" && choice == "heads") {
     window.alert("The flip was tails but you chose heads...you lose!");
 } else {
     window.alert("The flip was tails and you chose tails...you win!");
